@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Area de Pedidos</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/357aae614a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -24,11 +25,38 @@
     }
     ?>
     <div class="formulario">
-        <center>
-            <h1>Formulario de pedidos</h1>
-            <br>
-            <p>Nombre del solicitante</p>
-        </center>
+
+        <div class="dimensiones">
+
+            <form action="">
+                <h1>Formulario de pedidos</h1>
+                <i class="fa-solid fa-cart-plus" style="font-size: 100px; margin-top:20px"></i>
+
+                <h3>Nombre del solicitante</h3>
+                <input type="text" name="txtSolicitante" id="" required>
+                <br>
+                <h3>Tipo</h3>
+                <input type="text" name="txtTipo" id="" required>
+                <h3>
+                    Fecha de entrega
+                </h3>
+                <input type="date" name="txtfecha" id="" required>
+                <h3>
+                    Telefono
+                </h3>
+                <input type="tel" name="txtTel" id="" required>
+                <h3>
+                    Descripcion
+                </h3>
+                <input type="text" name="txtDescripcion" id="" required>
+                <h3>
+                    Monto Total
+                </h3>
+                <input type="number" name="txtMonto" step="0.1" id="" required>
+                <br>
+                <input type="submit" value="Agregar Pedido" class="btn-generales">
+            </form>
+        </div>
     </div>
 
 
