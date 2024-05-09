@@ -32,3 +32,15 @@
 color: white;
 background-color: black;
 }
+
+/* Telefonos moviles*/
+@media (max-width:932px){
+    .dimensiones{
+        width: 600px;
+        margin-left: 1%;
+        border-color: white;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+}
