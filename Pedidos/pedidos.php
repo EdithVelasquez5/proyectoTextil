@@ -54,11 +54,18 @@
                 </h3>
                 <input type="number" name="txtMonto" step="0.1" id="" required>
                 <br>
-                <input type="submit" value="Agregar Pedido" class="btn-generales">
+                <input type="submit" value="Agregar Pedido" class="btn-generales" name="btn-encargo">
             </form>
-        </div>
-    </div>
 
+        </div>
+        
+    </div>
+    <b>
+    <div class="icono-tabla">
+        ver tabla de pedidos
+        </div>
+    </b>
+    
 
     <?php include_once('../templates/footer.php'); ?>
 </body>

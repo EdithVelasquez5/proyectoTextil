@@ -33,6 +33,27 @@ color: white;
 background-color: black;
 }
 
+.icono-tabla{
+    color: white;
+    background-color: black;
+    width: 250px;
+    border-radius: 1200px;
+    margin-left: 20px;
+    margin-top: 20px;
+    position: sticky;
+    bottom: 20px;
+    left: 30px;
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.icono-tabla:hover{
+  background-color: blue;
+}
+
 /* Telefonos moviles*/
 @media (max-width:932px){
     .dimensiones{
@@ -50,11 +71,12 @@ background-color: black;
     }
     .dimensiones input{
         border-radius: 20px;
-        margin-bottom: 10px;
+        
     }
     .dimensiones h3{
         margin-top: 10px;
-        margin-bottom: 15px;
+        
         font-size: 30px;
     }
+    
 }
