@@ -36,11 +36,25 @@ background-color: black;
 /* Telefonos moviles*/
 @media (max-width:932px){
     .dimensiones{
-        width: 600px;
+        width: 350px;
         margin-left: 1%;
-        border-color: white;
         text-align: center;
         margin-bottom: 30px;
         margin-top: 30px;
+        box-shadow: 0px 0px 0px white;
+        border: 1px white solid;
+    }
+    .formulario{
+        margin-top: 2%;
+        font-size: 30px;
+    }
+    .dimensiones input{
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+    .dimensiones h3{
+        margin-top: 10px;
+        margin-bottom: 15px;
+        font-size: 30px;
     }
 }

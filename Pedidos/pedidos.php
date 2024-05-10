@@ -28,7 +28,7 @@
 
         <div class="dimensiones">
 
-            <form action="">
+            <form action="../php/core.php" method="get">
                 <h1>Formulario de pedidos</h1>
                 <i class="fa-solid fa-cart-plus" style="font-size: 100px; margin-top:20px"></i>
 
