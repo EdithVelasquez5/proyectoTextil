@@ -37,7 +37,60 @@ if (isset($_POST['username']) && isset($_POST['pass'])) {
 
       //  echo "Usuario o contraseña incorrectos.";
     }
-}else{
+}
+//Insercion de lista de pedidos
+else if(isset($_POST['btn-encargo'])){
+    //llenado de datos para lista de pedidos
+    $solicitante=$_POST['txtSolicitante'];
+    $Tipo=$_POST['txtTipo'];
+    $Fecha=$_POST['txtfecha'];
+    $Telefono=$_POST['txtTel'];
+    $Descripcion=$_POST['txtDescripcion'];
+    $MontoTotal=$_POST['txtMonto'];
+    $id_empleado=$_SESSION['id_empleado'];
+    //llenar datos en una lista con las variable
+    $lista_pedidos[]=array(
+        "solicitante"=>$solicitante,
+        "Tipo"=>$Tipo,
+        "Fecha"=>$Fecha,
+        "Telefono"=>$Telefono,
+        "Descripcion"=>$Descripcion,
+        "MontoTotal"=>$MontoTotal,
+        "id_empleado"=>$id_empleado
+    );
+    //guardar la lista en una sesion para trasladarlo
+    $_SESSION['lista_pedidos']=$lista_pedidos;
+    
+    echo("<script> alert('Se logro la insercion de pedido') </script>" );
+    header('Location: ../Pedidos/pedidos.php');
+    /*
+    echo "<table border='1'>";
+    echo "<tr>";
+    echo "<th>Solicitante</th>";
+    echo "<th>Tipo</th>";
+    echo "<th>Fecha</th>";
+    echo "<th>Telefono</th>";
+    echo "<th>Descripcion</th>";
+    echo "<th>MontoTotal</th>";
+    echo "<th>id_empleado</th>";
+    echo "</tr>";
+    foreach($lista_pedidos as $pedidos){
+        echo "<tr>";
+        echo "<td>".$pedidos['solicitante']."</td>";
+        echo "<td>".$pedidos['Tipo']."</td>";
+        echo "<td>".$pedidos['Fecha']."</td>";
+        echo "<td>".$pedidos['Telefono']."</td>";
+        echo "<td>".$pedidos['Descripcion']."</td>";
+        echo "<td>".$pedidos['MontoTotal']."</td>";
+        echo "<td>".$pedidos['id_empleado']."</td>";
+        echo "</tr>";
+    }
+    echo "</table>";  
+    */  
+
+}
+
+else{
     echo("<script> alert('Usuario o Contraseña Incorrectos') </script>" );
   //  header("Location: login.php");
     
