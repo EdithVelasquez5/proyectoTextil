@@ -28,7 +28,7 @@
 
         <div class="dimensiones">
 
-            <form action="../php/core.php" method="post">
+            <form action="../Pedidos/Core_pedidos.php" method="post">
                 <h1>Formulario de pedidos</h1>
                 <i class="fa-solid fa-cart-plus" style="font-size: 100px; margin-top:20px"></i>
 
@@ -64,7 +64,7 @@
     </div>
     
     <b>
-        <a href="" style="text-decoration: none;">
+        <a href="./Core_pedidos.php" style="text-decoration: none;">
         <div class="icono-tabla">
         ver tabla de pedidos
         </div>

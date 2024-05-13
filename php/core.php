@@ -22,7 +22,7 @@ if (isset($_POST['username']) && isset($_POST['pass'])) {
         // Credenciales correctas, iniciar sesión y redirigir
         $_SESSION['logged_in'] = true;
         $_SESSION['username'] = $username; // Guardar el nombre de usuario en la sesión
-        $_SESSION['id_empleado']=1;
+        $_SESSION['id_empleado']=1; // *! ID para comprobar los datos de insercion de pedidos eliminar luego
         header("Location: ../login/inicio.php"); // Redirigir a una página de bienvenida
         exit; // Terminar el script para evitar ejecución adicional
     } else {
