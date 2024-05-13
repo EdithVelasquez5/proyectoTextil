@@ -55,11 +55,14 @@
                 <input type="number" name="txtMonto" step="0.1" id="" required>
                 <br>
                 <input type="submit" value="Agregar Pedido" class="btn-generales" name="btn-encargo">
+                
             </form>
+            
 
         </div>
         
     </div>
+    
     <b>
         <a href="" style="text-decoration: none;">
         <div class="icono-tabla">
@@ -68,6 +71,8 @@
         </a>
     
     </b>
+   
+    
     
 
     <?php include_once('../templates/footer.php'); ?>
