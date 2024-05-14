@@ -7,7 +7,9 @@
     <title>Area de Pedidos</title>
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/357aae614a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
+
 
 <body>
     <?php
@@ -30,7 +32,7 @@
 
             <form action="../Pedidos/Core_pedidos.php" method="post">
                 <h1>Formulario de pedidos</h1>
-                <i class="fa-solid fa-cart-plus" style="font-size: 100px; margin-top:20px"></i>
+                <i class="fa-solid fa-cart-plus" style="font-size: 90px; margin-top:20px;"></i>
 
                 <h3>Nombre del solicitante</h3>
                 <input type="text" name="txtSolicitante" id="" required>
@@ -64,10 +66,13 @@
     </div>
     
     <b>
+        
         <a href="./Core_pedidos.php" style="text-decoration: none;">
+
         <div class="icono-tabla">
         ver tabla de pedidos
         </div>
+        
         </a>
     
     </b>
