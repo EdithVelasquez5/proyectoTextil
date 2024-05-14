@@ -12,7 +12,7 @@ if(isset($_POST['btn-encargo'])){
     $Descripcion=$_POST['txtDescripcion'];
     $MontoTotal=$_POST['txtMonto'];
     $id_empleado=$_SESSION['id_empleado'];
-    //llenar datos en una lista con las variable
+    //llenar datos en una lista con las variable, estos datos serian persistentes y acumulables a varias inserciones
     $lista_pedidos[]=array(
         "solicitante"=>$solicitante,
         "Tipo"=>$Tipo,
@@ -20,7 +20,7 @@ if(isset($_POST['btn-encargo'])){
         "Telefono"=>$Telefono,
         "Descripcion"=>$Descripcion,
         "MontoTotal"=>$MontoTotal,
-        "id_empleado"=>$id_empleado
+        "id_empleado"=>$id_empleado,
     );
     //guardar la lista en una sesion para trasladarlo
     $_SESSION['lista_pedidos']=$lista_pedidos;
